@@ -1,0 +1,31 @@
+zones:
+  base:
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+    visual_label: BASE
+  entrada:
+    x: 1.5
+    y: 0.0
+    yaw: 0.0
+    visual_label: ENTRADA
+  auditorio:
+    x: 4.0
+    y: 2.0
+    yaw: 1.57
+    visual_label: AUDITORIO
+  stand_robotica:
+    x: 2.0
+    y: 3.0
+    yaw: 0.0
+    visual_label: ROBOTICA
+  cafeteria:
+    x: -1.0
+    y: 2.5
+    yaw: 3.14
+    visual_label: CAFE
+  networking:
+    x: 3.0
+    y: -1.5
+    yaw: -1.57
+    visual_label: NETWORKING

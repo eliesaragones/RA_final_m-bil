@@ -1,0 +1,5 @@
+string pickup_zone
+string destination_zone
+---
+bool accepted
+string message

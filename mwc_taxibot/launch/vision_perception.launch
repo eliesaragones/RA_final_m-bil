@@ -1,0 +1,14 @@
+<launch>
+  <arg name="image_topic" default="/camera/image_raw" />
+  <arg name="simulated_zone_label" default="" />
+  <arg name="visual_obstacle" default="false" />
+
+  <node pkg="mwc_taxibot" type="vision_perception_node" name="vision_perception_node" output="screen">
+    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="simulated_zone_label" value="$(arg simulated_zone_label)" />
+    <param name="visual_obstacle" value="$(arg visual_obstacle)" />
+    <param name="enable_color_zone_detection" value="true" />
+    <param name="publish_only_after_image" value="false" />
+    <param name="publish_rate" value="5.0" />
+  </node>
+</launch>

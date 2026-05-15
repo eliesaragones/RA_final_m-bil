@@ -1,0 +1,9 @@
+base_zone: base
+pickup_wait_time: 5.0
+zone_confirmation_timeout: 4.0
+obstacle_wait_time: 3.0
+max_obstacle_retries: 3
+return_to_base_after_service: true
+status_publish_rate: 2.0
+auto_confirm_zone_without_vision: true
+move_base_action_name: move_base

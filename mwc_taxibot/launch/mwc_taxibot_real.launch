@@ -1,0 +1,14 @@
+<launch>
+  <arg name="image_topic" default="/camera/rgb/image_raw" />
+  <arg name="move_base_action_name" default="move_base" />
+  <arg name="auto_confirm_zone_without_vision" default="false" />
+
+  <include file="$(find mwc_taxibot)/launch/taxi_manager.launch">
+    <arg name="move_base_action_name" value="$(arg move_base_action_name)" />
+    <arg name="auto_confirm_zone_without_vision" value="$(arg auto_confirm_zone_without_vision)" />
+  </include>
+
+  <include file="$(find mwc_taxibot)/launch/vision_perception.launch">
+    <arg name="image_topic" value="$(arg image_topic)" />
+  </include>
+</launch>

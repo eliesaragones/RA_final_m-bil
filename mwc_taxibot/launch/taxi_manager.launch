@@ -1,0 +1,11 @@
+<launch>
+  <arg name="move_base_action_name" default="move_base" />
+  <arg name="auto_confirm_zone_without_vision" default="true" />
+
+  <node pkg="mwc_taxibot" type="taxi_manager_node" name="taxi_manager_node" output="screen">
+    <rosparam command="load" file="$(find mwc_taxibot)/config/zones.yaml" />
+    <rosparam command="load" file="$(find mwc_taxibot)/config/taxi_params.yaml" />
+    <param name="move_base_action_name" value="$(arg move_base_action_name)" />
+    <param name="auto_confirm_zone_without_vision" value="$(arg auto_confirm_zone_without_vision)" />
+  </node>
+</launch>
